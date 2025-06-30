@@ -1,0 +1,8 @@
+ftfy==6.1.1
+regex
+tqdm
+numpy<2
+fvcore
+transformers
+open_clip-torch
+wandb

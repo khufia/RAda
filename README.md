@@ -93,7 +93,44 @@ Rational Matrix in the CLIP decision-making process for a given image, where pre
 
 (1) Setup environment and PyTorch
 ```bash
+  conda create -y -n rada python=3.12
+  conda activate rada
+  pip install torch==2.2.1+cu121 torchvision==0.17.1+cu121 torchaudio==2.2.1 --index-url https://download.pytorch.org/whl/cu121
+
 ```
+* Clone MaPLe code repository and install requirements
+```bash
+# Clone RAda code base
+git clone https://github.com/khufia/RAda.git
+
+cd RAda/
+```
+* Install dassl library.
+```bash
+# Instructions borrowed from https://github.com/KaiyangZhou/Dassl.pytorch#installation
+
+# Clone this repo
+git clone https://github.com/KaiyangZhou/Dassl.pytorch.git
+cd Dassl.pytorch/
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Install this library (no need to re-build if the source code is modified)
+python setup.py develop
+cd ..
+```
+* Install requirement
+```bash
+cd RAda
+pip install -r requirements.txt
+pip installl --upgrade setuptools
+```
+* Run EFT for Base2Novel
+```bash
+bash run.sh $bs $lr $ep $alpha $temp
+```
+
 
 ## Citation 📜
 

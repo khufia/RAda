@@ -1,0 +1,2 @@
+DescribableTextures, seed 1, 16 shot, weight 0.316, val_acc 76.16
+DescribableTextures, seed 1, 16 shot, weight 0.316, test_acc 3.38
