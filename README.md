@@ -120,12 +120,14 @@ pip install -r requirements.txt
 python setup.py develop
 cd ..
 ```
-* Install requirement
+* Install requirements
 ```bash
 cd RAda
 pip install -r requirements.txt
 pip installl --upgrade setuptools
 ```
+* Prepare Datasets
+Follow DATSETS.md to prepare the datasets
 * Run EFT for Base2Novel
 ```bash
 bash run.sh $bs $lr $ep $alpha $temp
