@@ -112,5 +112,3 @@ url={https://arxiv.org/abs/2506.05336},
 ---
 
 [<img src="assets/MBZUAI_logo.png" width="360" height="90">](https://mbzuai.ac.ae)
-[<img src="assets/allenai_logo.png" width="300" height="85">](https://allenai.org/)
-[<img src="assets/UW_logo.png" width="300">](https://www.washington.edu/)
