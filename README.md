@@ -87,82 +87,20 @@ Rational Matrix in the CLIP decision-making process for a given image, where pre
 
 ---
 
-## 🔧 Running VideoMolmo 
+## 🔧 Running RAda 
 
 ### Environment setup
 
 (1) Setup environment and PyTorch
 ```bash
-git clone https://github.com/mbzuai-oryx/VideoMolmo
-cd VideoMolmo/VideoMolmo
-conda create -n .videomolmo python=3.10 -y
-conda activate .videomolmo
-pip install torch==2.5.1 torchvision==0.20.1 --index-url https://download.pytorch.org/whl/cu121
 ```
-
-(2) Setup Molmo
-```bash
-git clone https://github.com/allenai/molmo.git
-cd molmo && pip install -e .[all] && cd .. # setup molmo requirements
-pip install -r requirements.txt
-```
-
-(3) Setup SAM
-```bash
-python setup.py build_ext --inplace # build sam2
-mkdir -p sam2_checkpoints
-wget https://dl.fbaipublicfiles.com/segment_anything_2/092824/sam2.1_hiera_large.pt -O sam2_checkpoints/sam2.1_hiera_large.pt
-```
-
-### 🔄 Inference
-
-To run inference on the provided sample video:
-
-```bash
-python infer.py \
-  --video_path ../examples/video_sample1 \
-  --prompt "point to the person in red shirt" \
-  --save_path "results"
-```
-
-Your video should be a folder with all the frames. Sample structure:
-```
-video_sample1/
-├── frame_0001.jpg
-├── frame_0002.jpg
-├── frame_0003.jpg
-└── ...
-```
-
-Output includes segmentation masks for each frame and a JSON file (`points.jsonl`) containing point coordinates.
-```
-reuslts/
-├── video_sample1/
-│   ├── frame_0001.jpg
-│   ├── frame_0002.jpg
-│   ├── frame_0003.jpg
-│   ├── points.jsonl
-│   └── ...
-└── ...
-```
-### Training and Evaluation 🚀
-
-To be released soon! Stay tuned for updates.
-
-
-## Todos
-
-- [ ] Release training and evaluation scripts.
-- [ ] Add support for additional datasets.
-- [ ] Release dataset creation pipeline.
-
 
 ## Citation 📜
 
 ```bibtex
-  @misc{ahmad2025videomolmospatiotemporalgroundingmeets,
-      title={VideoMolmo: Spatio-Temporal Grounding Meets Pointing},
-      author={Ghazi Shazan Ahmad and Ahmed Heakl and Hanan Gani and Abdelrahman Shaker and Zhiqiang Shen and Ranjay Krishna and Fahad Shahbaz Khan and Salman Khan},
+  @misc{chen2025rada,
+      title={One Last Attention for you Vision-Language Model},
+      author={},
       year={2025},
       eprint={2506.05336},
       archivePrefix={arXiv},
