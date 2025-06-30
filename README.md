@@ -59,33 +59,28 @@ Key contributions of **RAda**:
 <p align="center">
   <img src="assets/rational.jpg" alt="VideoGLaMM Architecture">
 </p>
-**Rational Matrix** in the CLIP decision-making process for a given image, where predictions (i.e. logits) are computed by summing each column. It fuses text and visual features and pro-vides a fine-grained characterization of different predictions.
-
----
-## 🏗️ Benchmark and Annotation Pipeline
-
-<p align="center">
-  <img src="assets/videomolmo_annotation_pipeline.png" alt="Annotation Pipeline">
-</p>
-
-We propose a semi-automatic annotation pipeline for creating a grounded conversation generation (GCG) dataset for videos.
+Rational Matrix in the CLIP decision-making process for a given image, where predictions (i.e. logits) are computed by summing each column. It fuses text and visual features and pro-vides a fine-grained characterization of different predictions.
 
 ---
 
 ## 📈 Results
 
 
-> |1| **VideoMolmo** demonstrates robust generalization and fine-grained spatio-temporal grounding across diverse out-of-distribution scenarios from our proposed benchmark, for instance, correctly pointing to traffic lights (2nd row) in challenging driving scenes despite never encountering such scenarios during training.
+> |1| Evaluations in the FFT setting.
 <p align="center">
-  <img src="assets/benchmark_diagram.png" alt="Benchmark results">
+  <img src="assets/fft.png" alt="Benchmark results">
 </p>
 
 
-> |2| Quantative results showing VideoMolmo with average improvement of 4.1% over SoTA (VideoGLaMM) and 4.8% over our baseline (Molmo+SAM2). 
+> |2| Comparison with EFT methods in the base-to-new setting.
 <p align="center">
-  <img src="assets/videomolmo_quantitative_results.png" alt="Benchmark results">
+  <img src="assets/eft.png" alt="Benchmark results">
 </p>
 
+> |3| Comparisons with representative TTT methods regarding DG performance in four distribution shifts
+<p align="center">
+  <img src="assets/ttt.png" alt="Benchmark results">
+</p>
 
 
 
