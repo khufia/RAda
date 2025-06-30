@@ -36,7 +36,7 @@
 ## 📊 Overview
 
 <p align="center">
-  <img src="assets/videomolmo_teaser.png" width="70%" alt="VideoMolmo Architectural Overview">
+  <img src="assets/rational.pdf" width="70%" alt="RAda Framework">
 </p>
 
 Pretrained vision-language models (VLMs), such as CLIP, achieve remarkable zero-shot performance, yet their downstream potential hinges on effective fine-tuning. Most adaptation methods typically focus on refining representation from separate modalities (text or vision) but neglect the critical role of their fused representations in the decision-making process, \emph{\ie} rational matrix that drives the final prediction \cite{chen2023domain}. 
