@@ -28,7 +28,7 @@
 ---
 
 ## 🆕 Latest Updates
-
+- 📢 **July 2025**: Stay tuned for code release!
 - 📢 **June 2025**: Our paper has been accepted to ICCV 2025!
 
 
