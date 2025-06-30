@@ -36,7 +36,7 @@
 ## 📊 Overview
 
 <p align="center">
-  <img src="assets/rational.jpg" width="70%" alt="RAda Framework">
+  <img src="assets/tease.jpg" width="70%" alt="RAda Framework">
 </p>
 
 Pretrained vision-language models (VLMs), such as CLIP, achieve remarkable zero-shot performance, yet their downstream potential hinges on effective fine-tuning. Most adaptation methods typically focus on refining representation from separate modalities (text or vision) but neglect the critical role of their fused representations in the decision-making process, \emph{\ie} rational matrix that drives the final prediction \cite{chen2023domain}. 
@@ -57,10 +57,9 @@ Key contributions of **RAda**:
 ## 🧠 Architecture
 
 <p align="center">
-  <img src="assets/tease.jpg" alt="VideoGLaMM Architecture">
+  <img src="assets/rational.jpg" alt="VideoGLaMM Architecture">
 </p>
-
-**VideoMolmo** consists of four end-to-end trainable components: (1) a visual encoder, (2) a temporal module, (3) visual projector (4) a decoder-only large language model (LLM); and a post-processing module.
+**Rational Matrix** in the CLIP decision-making process for a given image, where predictions (i.e. logits) are computed by summing each column. It fuses text and visual features and pro-vides a fine-grained characterization of different predictions.
 
 ---
 ## 🏗️ Benchmark and Annotation Pipeline
