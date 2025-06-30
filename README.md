@@ -48,7 +48,11 @@ Experiments in different settings (\emph{\ie} updating, or freezing pretrained e
 ---
 ## 🏆 Highlights
 Key contributions of **RAda**:
+1. Rational Adaptation for VLMs: Extend the classical rational matrix to vision‑language models, directly modeling and fine‑tuning the fused image–text interactions that drive the final prediction.
 
+2. Minimal, Encoder‑Agnostic Design: Plug in a single multi‑query attention layer atop frozen encoders to learn a lightweight mask over the rational matrix—no encoder changes, just a few lines of code.
+
+3. Broad, Consistent Gains: Validate RAda across full fine‑tuning, efficient adapter‑only tuning, and test‑time training, showing reliable improvements and competitive performance in all settings.
 ---
 ## 🧠 Architecture
 
