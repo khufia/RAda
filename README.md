@@ -98,14 +98,14 @@ Rational Matrix in the CLIP decision-making process for a given image, where pre
   pip install torch==2.2.1+cu121 torchvision==0.17.1+cu121 torchaudio==2.2.1 --index-url https://download.pytorch.org/whl/cu121
 
 ```
-* Clone MaPLe code repository and install requirements
+(2) Clone MaPLe code repository and install requirements
 ```bash
 # Clone RAda code base
 git clone https://github.com/khufia/RAda.git
 
 cd RAda/
 ```
-* Install dassl library.
+(3) Install dassl library.
 ```bash
 # Instructions borrowed from https://github.com/KaiyangZhou/Dassl.pytorch#installation
 
@@ -120,15 +120,17 @@ pip install -r requirements.txt
 python setup.py develop
 cd ..
 ```
-* Install requirements
+(4) Install requirements
 ```bash
 cd RAda
 pip install -r requirements.txt
 pip installl --upgrade setuptools
 ```
-* Prepare Datasets
-Follow DATSETS.md to prepare the datasets
-* Run EFT for Base2Novel
+(5) Prepare Datasets
+
+Follow [DATSETS.md](./DATASETS.md) to prepare the datasets
+
+(6) Run EFT for Base2Novel
 ```bash
 bash run.sh $bs $lr $ep $alpha $temp
 ```
